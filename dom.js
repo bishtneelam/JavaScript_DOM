@@ -121,31 +121,48 @@
 // console.log(items.previousElementSibling)
 
 //Create Element
-const subTitle = document.createElement('h3');
-subTitle.className = "header wrapper";
-subTitle.id = "header-subTitle"
-subTitle.setAttribute("subName", "demo testing html element")
-console.log(subTitle)
+// const subTitle = document.createElement('h3');
+// subTitle.className = "header wrapper";
+// subTitle.id = "header-subTitle"
+// subTitle.setAttribute("subName", "demo testing html element")
+// console.log(subTitle)
 
-const textNode = document.createTextNode("Hello from createTextNode");
-console.log(textNode)
+// const textNode = document.createTextNode("Hello from createTextNode");
+// console.log(textNode)
 
-subTitle.appendChild(textNode)
-console.log(subTitle)
+// subTitle.appendChild(textNode)
+// console.log(subTitle)
 
-const header = document.querySelector('#main-header');
-const h1 = document.querySelector('h1');
-// header.insertBefore(subTitle, h1.nextSibling)
-// header.insertBefore(subTitle, h1.previousSibling)
+// const header = document.querySelector('#main-header');
+// const h1 = document.querySelector('h1');
+// // header.insertBefore(subTitle, h1.nextSibling)
+// // header.insertBefore(subTitle, h1.previousSibling)
 
-// h1.insertAdjacentElement("beforeend", subTitle) --> insert as last child but inside h1 only
-// h1.insertAdjacentElement("beforebegin", subTitle)
-// h1.insertAdjacentElement("afterbegin", subTitle)
-
-
-h1.insertAdjacentElement("afterend", subTitle)
+// // h1.insertAdjacentElement("beforeend", subTitle) --> insert as last child but inside h1 only
+// // h1.insertAdjacentElement("beforebegin", subTitle)
+// // h1.insertAdjacentElement("afterbegin", subTitle)
 
 
+// h1.insertAdjacentElement("afterend", subTitle)
+
+
+//EVENTS
+const handleClick = (event) => {
+    // document.querySelector('body').style.backgroundColor = "plum"
+    // console.log(event.target);
+    // console.log(event.target.id);
+    // console.log(event.target.className);
+    // console.log(event.target.classList);
+    // console.log(event.type);
+    // console.log(event.clientX);
+    // console.log(event.offsetX)
+    // console.log(event.offsetY)
+    // console.log(event.altKey);
+    // console.log(event.ctrlKey);
+    // console.log(event.shiftKey)
+}
+const button = document.getElementById('btn');
+button.addEventListener('click', handleClick)
 
 
 

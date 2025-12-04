@@ -50,3 +50,13 @@ li {
     border: 1px solid #f3e9e9;
     padding: 1rem;
 }
+#btn {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background-color: #343a40; /* dark grey */
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

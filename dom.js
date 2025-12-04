@@ -147,7 +147,7 @@
 
 
 //EVENTS
-const handleClick = (event) => {
+const handleClick = (e) => {
     // document.querySelector('body').style.backgroundColor = "plum"
     // console.log(event.target);
     // console.log(event.target.id);
@@ -160,9 +160,35 @@ const handleClick = (event) => {
     // console.log(event.altKey);
     // console.log(event.ctrlKey);
     // console.log(event.shiftKey)
+    console.log("EVENT_TYPE", e.type)
 }
 const button = document.getElementById('btn');
-button.addEventListener('click', handleClick)
+// button.addEventListener('click', handleClick)
+// button.addEventListener('dblclick', doubleClick);
+// button.addEventListener('mousedown', mosueDown)
+// button.addEventListener('mouseup', mouseUp)
+// button.addEventListener('mouseover', mouseOver)
+// button.addEventListener('mouseleave', mouseLeave)
+// button.addEventListener('mousemove', mouseMove)
+
+function doubleClick(e) {
+    console.log("EVENT_TYPE",e.type)
+}
+function mosueDown(e) {
+    console.log('EVENT_TYPE', e.type)
+}
+function mouseUp(e) {
+    console.log("EVENT_TYPE", e.type)
+}
+function mouseOver(e) {
+    console.log("EVENT_TYPE", e.type)
+}
+function mouseLeave(e) {
+    console.log("EVENT_TYPE", e.type)
+}
+function mouseMove(e) {
+    console.log('EVENT_TYPE', e.type)
+}
 
 
 
